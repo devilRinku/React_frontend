@@ -1,21 +1,11 @@
-
-
-
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Heading from './Heading';
-import List from './List'
-const name="rinku";
-const current= new Date().toLocaleDateString();
-const time =new Date().toLocaleTimeString();
-ReactDOM.render(<>
-
-<Heading/>
-<List/>
-<p>current Date is={current}</p>
-<p>current time is={time}</p>
- </> ,document.getElementById("root")
-)
-
-
+import React from "react";
+import ReactDOM from "react-dom";
+import Card from './Card';
+ReactDOM.render(
+  <>
+  <Card imgsc="https://m.media-amazon.com/images/M/MV5BOTY0ZjliOGUtMDFiZS00YzcwLWFiZWYtMzg4MWZkMWIwYzYwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg"
+  sname="shadow and bone"
+  titel="A Netflix Original Series"
+  link="https://www.netflix.com/watch/80236160?trackId=14315607"/>
+  </>,document.getElementById('root')
+);
